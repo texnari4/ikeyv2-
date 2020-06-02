@@ -15,5 +15,3 @@ docker pull gaomd/ikev2-vpn-server
 docker run --privileged -d --name ikev2-vpn-server --restart=always -p 500:500/udp -p 4500:4500/udp gaomd/ikev2-vpn-server:0.3.0
 
 docker exec -it ikev2-vpn-server cat /etc/ipsec.secrets
-
-sudo docker run --restart=always -d gaomd/ikev2-vpn-server
